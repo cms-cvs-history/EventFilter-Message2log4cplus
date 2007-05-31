@@ -5,9 +5,10 @@
 // 
 //
 // Original Author:  Jim Kowalkowski
-// $Id: MLlog4cplus.cc,v 1.5 2007/04/18 18:59:39 wmtan Exp $
+// $Id: MLlog4cplus.cc,v 1.4.2.1 2007/05/31 21:01:40 meschi Exp $
 //
 
+#include "FWCore/ServiceRegistry/interface/ServiceMaker.h"
 #include "FWCore/MessageLogger/interface/MessageLoggerQ.h"
 #include "FWCore/MessageService/interface/NamedDestination.h"
 #include "DataFormats/Provenance/interface/EventID.h"
@@ -91,3 +92,5 @@ using namespace ML;
   }
 
 
+using ML::MLlog4cplus;
+DEFINE_FWK_SERVICE(MLlog4cplus);
